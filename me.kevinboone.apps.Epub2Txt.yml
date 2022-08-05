@@ -1,0 +1,25 @@
+app-id: me.kevinboone.apps.Epub2Txt
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
+command: epub2txt
+modules:
+  - name: main
+    buildsystem: simple
+    build-commands:
+      - echo Building...
+      - ls
+      - make
+      - install -D epub2txt /app/bin/epub2txt
+      - install -D -m 644 appdata.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
+    sources:
+      - type: git
+        url: https://github.com/kevinboone/epub2txt2
+        tag: v2.06
+      - type: file
+        path: appdata.xml
+finish-args:
+  - --filesystem=host:ro
+cleanup-commands:
+  - rm -rf build 
+

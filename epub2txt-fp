@@ -1,0 +1,3 @@
+#!/bin/bash
+flatpak run me.kevinboone.apps.Epub2Txt "$@"
+

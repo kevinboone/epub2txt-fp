@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>me.kevinboone.apps.Epub2Txt</id>
+  <metadata_license>GPL-3.0-or-later</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>epub2txt</name>
+  <summary>A console EPUB reader/converter</summary>
+  <releases>
+    <release date="2022-08-05" version="2.0.6" />
+  </releases>
+  <categories><category>Text</category></categories>
+  <description>
+  <p>
+  epub2txt is a simple, fast command-line utility for extracting
+  text from EPUB documents.
+  </p>
+  </description>
+  <url type="homepage">https://github.com/kevinboone/epub2txt2</url>
+  <update_contact>kevin@railwayterrace.com</update_contact>
+  <content_rating type="oars-1.1" />
+</component>
